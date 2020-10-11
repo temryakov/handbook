@@ -1,0 +1,3 @@
+$("#exampleModal").modal({
+    backdrop: false
+  });

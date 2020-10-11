@@ -1,0 +1,116 @@
+* {
+    font-family: 'Roboto';
+}
+
+nav {
+    background: linear-gradient(rgb(255, 255, 255) , rgba(255, 255, 255, 0.9));
+    color: black;
+    height: 60px;
+}
+
+.navbutton {
+    background-color: transparent;
+    color: black;
+    border: none;
+    outline: none;
+}
+
+.imgbutton {
+    background-color: transparent;
+    color: black;
+    border: none;
+}
+
+.tagbutton {
+    width: auto; 
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: black;
+    height: 30px;
+    transition-duration: 0.4s;
+    font-size: 17px;
+    font-weight: lighter;
+    padding-right: 1.1ch;
+    padding-left: 1ch;
+}
+
+.getbutton {
+    border-radius: 20px;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    width: 160px;
+    height: 40px;
+    transition-duration: 0.4s;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.getbutton:hover {
+    background-color: black;
+    color: white;
+}
+
+.info-response {
+    width: 60%;
+}
+
+@media only screen and (max-width: 950px) {
+    .info-response {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .info-response {
+        width: 100%;
+    }
+}
+
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding-top: 30px;
+}
+
+footer p {
+    font-weight: lighter;
+    color: rgb(128, 128, 128);
+}
+
+footer a {
+    background-color: transparent;
+    color: white;
+    font-weight: lighter;
+}
+
+footer a:hover {
+    color: white
+}
+
+/* Modal */
+
+.modal-bg-light {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.modal-btn {
+    border-radius: 5px;
+    border: 1px solid rgb(187, 187, 187);
+    color: black;
+    background-color: white;
+    width: 160px;
+    height: 40px;
+    transition-duration: 0.4s;
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+.modal-btn:hover {
+    border-color: black;
+}
