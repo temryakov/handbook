@@ -56,6 +56,16 @@ nav {
     width: 60%;
 }
 
+.hamburger {
+    position: fixed;
+    display: none;
+    background-color: transparent;
+    border: none;
+    margin-top: 13px;
+
+}
+
+
 @media only screen and (max-width: 950px) {
     .info-response {
         width: 80%;
@@ -66,9 +76,32 @@ nav {
     .info-response {
         width: 100%;
     }
+    .navbutton, .imgbutton {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        margin-left: 90%;
+    }
+    nav h3 {
+        font-size: 23px;
+        margin-top: 7px;
+    }
 }
 
+@media only screen and (max-width:500px) {
+    .hamburger {
+        margin-left: 87%;
+        
+    }
+}
 
+@media only screen and (max-width:400px) {
+    .hamburger {
+        margin-left: 82%;
+        
+    }
+}
 
 
 footer {
