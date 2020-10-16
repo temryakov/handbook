@@ -2,8 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Справочник | Авторизация</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Справочник | Регистрация</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS only -->
@@ -14,29 +13,35 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
+    <!-- User files -->
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/registration.css">
+
+
 </head>
 
 
 <body>
     <div class='container'>
-        <h2>Авторизация</h2>
-        <form method='post' name='loginform' action='/' onsubmit="return validateForm()">
+        <h2>Регистрация</h2>
+        <form method='post' action='/' name='registration_form' onsubmit='return validateForm()'>
             <div>
                 <input type="text" class='auth' name="login" placeholder="Логин"> 
+            </div>
+            <div>
+                <input type="text" class='auth' name="name" placeholder="Имя"> 
             </div>
             <div>
                 <input type="password" class='auth' name="password" placeholder="Пароль">
             </div>
             <div>
-                <a href='#'>Забыли пароль?</a> 
-                <input type="submit" class='enter' value="Войти" name='log_in'>
+                <input type="password" class='auth' name="confirm_password" placeholder="Повторите пароль">
+            </div>
+            <div>
+                <input type="submit" class='enter' value="Зарегистрироваться" name='log_in'>
+            </div>
+            <p id='empty_value'></p>
         </form>
-        </div>
-        <form action='file:///Users/maksimtemryakov/Public/programming/projects/Справочник/registration/index.html'>
-            <button class='button'>Регистрация</button>
-        </form>
-        <p id='empty_value'></p>
-    </div>
 
-    <script src='script.js'></script>
-</body>
+        <script src='plugins/registration.js'></script>
